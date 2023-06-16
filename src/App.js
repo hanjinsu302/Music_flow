@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes,} from "react-router-dom";
+import axios from "axios";
+import { useState, useEffect } from "react";
+//페이지 import
+import Mainpage from "./pages/Mainpage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import music from "./json/music.json"
+import Mainchart from "./pages/Mainchart";
+//스타일 import
+import "./styles/App.css"
 
 function App() {
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Header/>
+      <Routes>
+      <Route path="/" element={<Mainpage />} />
+      <Route path="/Mainchart" element={<Mainchart />} />
+      </Routes>
+      <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
