@@ -1,55 +1,31 @@
 import "../styles/mainchart.scss"
+import MusicItem from "../components/MusicItem";
 
-const Mainchart = ({props}) => {
-    console.log(props)
-    // const {products}= props;
-    // console.log(products)
+const Mainchart = (props) => {
+    const {musics} =props;
+    const topen = musics.filter((e) => e.country === "해외");
+    const topko = musics.filter((e) => e.country === "국내");
+   console.log(musics);
     return(
         <div>
-            <div className="todaychart">인기차트 〉</div>
-        <div className="Mainadd">
-        
-            <div className="Topko">
-                <div className="Topmusic">
-                    <div className="TopCoverbox">
-                    <img
-                        className="TopCover"
-                        src={process.env.PUBLIC_URL + "/images/wrWOftbH09kzkxQAu6oLODje3kbkPD7U2VZntoGvAM-vn-RooTNigvVUyY3JYSlij1Idmq2tBdJXx0JL9qOoPQ.gif"}
-                        alt="Second slide"
-                    />
+         <div className="todaychart">인기차트 〉</div>
+            <div className="Mainadd">
+                <div className="Topko">
+                    <div>
+                        {topko.map((music) => {
+                        return <MusicItem key={music.id} music={music} />;
+                        })}
                     </div>
-                    <div className="Topnum">1</div>
-                    <div className="Topinfo">
-                        <div>OMG</div>
-                        <div>NewJeans</div>
-                        <div>◎ Newjeans'OMG'</div>
+                </div>
+
+                <div className="Topen">
+                    <div>
+                        {topen.map((music) => {
+                        return <MusicItem key={music.id} music={music} />;
+                        })}
                     </div>
-                    <div className="Topplay">
-                        <button className="Topplaybtn">▶︎</button>
-                        </div>
                 </div>
             </div>
-            <div className="Topen">
-            <div className="Topmusic">
-                    <div className="TopCoverbox">
-                    <img
-                        className="TopCover"
-                        src={process.env.PUBLIC_URL + "/images/15175845.jpeg"}
-                        alt="Second slide"
-                    />
-                    </div>
-                    <div className="Topnum">1</div>
-                    <div className="Topinfo">
-                        <div>Peaches </div>
-                        <div>	Justin Bieber</div>
-                        <div>◎ 	Justice</div>
-                    </div>
-                    <div className="Topplay">
-                        <button className="Topplaybtn">▶︎</button>
-                        </div>
-                </div>
-            </div>
-        </div>
         </div>
     )
 }

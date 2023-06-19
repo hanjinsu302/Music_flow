@@ -10,9 +10,9 @@ const Mainpage = ({}) => {
     return (
         <div >
             <Mainmusic/>
-            <Mainchart/>
+            {/* <Mainchart/> */}
             <Mainsinger />
-            <Musicplay />
+            {/* <Musicplay /> */}
         </div>
     )
 

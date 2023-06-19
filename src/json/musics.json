@@ -1,0 +1,58 @@
+[
+    {   
+        "id":"1",
+        "title":"Spicy",
+        "name":"aespa",
+        "image":"/images/Spicy.jpeg",
+        "category":"댄스",
+        "country":"국내",
+        "album":"MY WORLD - The 3rd Mini Album",
+        "audio":"/audio/aespa - Spicy [128 kbps].mp3"
+    },
+    {
+        "id":"2",
+        "title":"I AM",
+        "name":"IVE (아이브)",
+        "image":"/images/I_AM.jpeg",
+        "album":"I've IVE",
+        "category":"댄스",
+        "country":"국내"
+    },
+    {
+        "id":"3",
+        "title":"PEACHES",
+        "name":"Justin Bieber",
+        "image":"/images/1600w-5tlu9r69vlc.webp",
+        "album":"앨범",
+        "country":"해외",
+        "category":"POP"
+    },
+    {
+        "id":"4",
+        "title":"퀸카 (Queencard)",
+        "name":"(여자)아이들",
+        "image":"/images/Queencard.jpeg",
+        "album":"Ifeel",
+        "country":"국내",
+        "category":"댄스"
+    },
+    {
+        "id":"5",
+        "title":"UNFORGIVEN (feat. Nile Rodgers)",
+        "name":"LE SSERAFIM (르세라핌)",
+        "image":"/images/Unforgiven.jpeg",
+        "album":"UNFORGIVEN",
+        "country":"국내",
+        "category":"댄스"
+    },
+    {
+        "id":"6",
+        "title":"이브, 프시케 그리고 푸른 수염의 아내",
+        "name":"LE SSERAFIM (르세라핌)",
+        "image":"/images/Unforgiven.jpeg",
+        "album":"UNFORGIVEN",
+        "country":"국내",
+        "category":"댄스"
+    }
+    
+]

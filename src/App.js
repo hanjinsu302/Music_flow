@@ -5,10 +5,13 @@ import { useState, useEffect } from "react";
 import Mainpage from "./pages/Mainpage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import music from "./json/music.json"
 import Mainchart from "./pages/Mainchart";
 //스타일 import
 import "./styles/App.css"
+//데이터
+import musics from "./json/musics.json"
+import Musicplay from "./pages/Musicplay";
+import Singer from "./pages/Singer";
 
 function App() {
  
@@ -19,7 +22,9 @@ function App() {
       <Header/>
       <Routes>
       <Route path="/" element={<Mainpage />} />
-      <Route path="/Mainchart" element={<Mainchart />} />
+      <Route path="/Mainchart" element={<Mainchart musics={musics} />} />
+      <Route path="/Musicplay/:musictitle" element={<Musicplay musics={musics}/>} />
+      <Route path="/Singer/:singername" element={<Singer musics={musics}/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -1,0 +1,65 @@
+.Topmusic{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(56, 54, 54);
+    width: 32vw;
+    height: 100px;
+}
+.TopCoverbox{
+    background-color: black;
+    
+    width: 80px;
+    height: 80px;
+    .TopCover{
+        width: 100%;
+        height: 100%;
+    }
+}   
+.Topnum{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(199, 199, 199);
+    margin: 20px;
+    width: 5%;
+    height: 100%;
+}
+.Topinfo{
+    margin-left: 10px;
+    width: 14vw;
+    color: rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    height: max-content;
+}
+.Topplay{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 45px;
+    width: 5%;
+    height: 100%;
+    .Topplaybtn{
+        background-color: rgb(56, 54, 54);
+        color: rgb(199, 199, 199);
+        border: none;
+    }
+}
+
+.info1{
+    display:inline-block;
+    font-size: 17px;
+    margin: 2px;
+   
+}
+.info2{
+    font-size: 10px;
+    margin: 2px;
+}
+.info3{
+    font-size: 6px;
+    margin: 2px;
+}
