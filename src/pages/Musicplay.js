@@ -20,21 +20,21 @@ const Musicplay = (props) => {
     return(
         <main className="Musicplay">
             <div className="Playbox">
-                <div className="img">
                     <div className="s">{targetMusic.title}</div>
                     <Link to={"/Singer/" + targetMusic.name}>
                     <div className="a">{targetMusic.name}＞</div>
                     </Link>
+                <div className="img">
                     <img
                         className="PlayCover"
                         src={process.env.PUBLIC_URL + `${targetMusic.image}`}
                         alt="Second slide"/>
                 </div>
                
-                <audio autoplay controls>
+            </div>
+                <audio autoplay controls className="audio">
     <source src={process.env.PUBLIC_URL + `${targetMusic.audio}`} type="audio/mp3"/>
 </audio>
-            </div>
             
         </main>
     )

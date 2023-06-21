@@ -1,10 +1,12 @@
 const Singer =(props) => {
 
-    const {musics} =props;
-    console.log(musics);
+    const {targetMusic} =props;
+    console.log(targetMusic)
+    
     return(
         <div className="Singer">asdasdasd
-         <div>{musics.name}</div></div>
+         {/* <div>{targetMusic.name}</div> */}
+         </div>
        
 
         

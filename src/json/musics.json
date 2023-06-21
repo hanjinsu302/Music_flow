@@ -16,7 +16,8 @@
         "image":"/images/I_AM.jpeg",
         "album":"I've IVE",
         "category":"댄스",
-        "country":"국내"
+        "country":"국내",
+        "audio":"/audio/IVE - I AM [321 kbps].mp3"
     },
     {
         "id":"3",
@@ -25,7 +26,8 @@
         "image":"/images/1600w-5tlu9r69vlc.webp",
         "album":"앨범",
         "country":"해외",
-        "category":"POP"
+        "category":"POP",
+        "audio":"/audio/.mp3"
     },
     {
         "id":"4",
@@ -34,7 +36,8 @@
         "image":"/images/Queencard.jpeg",
         "album":"Ifeel",
         "country":"국내",
-        "category":"댄스"
+        "category":"댄스",
+        "audio":"/audio/(G)I-DLE - 퀸카 (Queencard) [321 kbps].mp3"
     },
     {
         "id":"5",
@@ -43,7 +46,8 @@
         "image":"/images/Unforgiven.jpeg",
         "album":"UNFORGIVEN",
         "country":"국내",
-        "category":"댄스"
+        "category":"댄스",
+        "audio":"/audio/LE SSERAFIM - UNFORGIVEN (feat. Nile Rodgers) [320 kbps].mp3"
     },
     {
         "id":"6",
@@ -52,7 +56,8 @@
         "image":"/images/Unforgiven.jpeg",
         "album":"UNFORGIVEN",
         "country":"국내",
-        "category":"댄스"
+        "category":"댄스",
+        "audio":"/audio/LE SSERAFIM - Eve Psyche & The Bluebeard’s wife [320 kbps].mp3"
     }
     
 ]
