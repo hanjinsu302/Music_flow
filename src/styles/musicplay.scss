@@ -4,10 +4,11 @@
   font-weight: 800;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    // justify-content: center;
     align-items: center;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     .Playbox{
         flex-wrap: wrap;
         .PlayCover{
@@ -157,8 +158,26 @@
       opacity:0.5;
     }
 }
-.audio{
+.audioplayer{
   width: 90%;
+  border-radius: 10px;
+  background-color: rgb(227, 225, 225);
+  
+}
+.beforebtn{
+  font-size: 30px;
+  &:hover,
+      &:focus {
+        color: rgb(55, 55, 200);
+      }
+}
+.nextbtn{
+  font-size: 30px;
+  &:hover,
+      &:focus {
+        color: rgb(55, 55, 200);
+        
+      }
 }
 
 }

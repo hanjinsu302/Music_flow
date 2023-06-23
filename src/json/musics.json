@@ -23,7 +23,7 @@
         "id":"3",
         "title":"PEACHES",
         "name":"Justin Bieber",
-        "image":"/images/1600w-5tlu9r69vlc.webp",
+        "image":"/images/15175845.jpeg",
         "album":"앨범",
         "country":"해외",
         "category":"POP",
@@ -58,6 +58,16 @@
         "country":"국내",
         "category":"댄스",
         "audio":"/audio/LE SSERAFIM - Eve Psyche & The Bluebeard’s wife [320 kbps].mp3"
+    },
+    {
+        "id":"7",
+        "title":"I Don't Think That I Like Her",
+        "name":"Charlie Puth",
+        "image":"/images/RBozCOiH5u.webp",
+        "album":"CHARLIE",
+        "country":"해외",
+        "category":"POP",
+        "audio":"/audio/Charlie Puth - I Don’t Think That I Like Her [128 kbps].mp3"
     }
     
 ]

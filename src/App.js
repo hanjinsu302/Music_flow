@@ -12,6 +12,7 @@ import "./styles/App.css"
 import musics from "./json/musics.json"
 import Musicplay from "./pages/Musicplay";
 import Singer from "./pages/Singer";
+import Categorymusic from "./pages/Categorymusic";
 
 function App() {
  
@@ -25,6 +26,7 @@ function App() {
       <Route path="/Mainchart" element={<Mainchart musics={musics} />} />
       <Route path="/Musicplay/:musictitle" element={<Musicplay musics={musics}/>} />
       <Route path="/Singer/:singername" element={<Singer musics={musics}/>}/>
+      <Route path="/Categorymusic" element={<Categorymusic musics={musics}/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -8,18 +8,16 @@ const Mainsinger = ({}) => {
         <div className="Mainsinger"> 
         <div className="singer">
             <div className="singerimg">
-            <img
-            className="singerCover"
-            src={process.env.PUBLIC_URL + "/images/1600w-5tlu9r69vlc.webp"}
-            alt="Second slide"
-          />
+              <img
+              className="singerCover"
+              src={process.env.PUBLIC_URL + "/images/1600w-5tlu9r69vlc.webp"}
+              alt="Second slide"/>
             </div>
             <div className="singerinfo">
-            <img
-            className="singerLP"
-            src={process.env.PUBLIC_URL + "/images/1600w-5tlu9r69vlc.webp"}
-            alt="Second slide"
-          />
+              <img
+              className="singerLP"
+              src={process.env.PUBLIC_URL + "/images/1600w-5tlu9r69vlc.webp"}
+              alt="Second slide"/>
             </div>
             
         </div>

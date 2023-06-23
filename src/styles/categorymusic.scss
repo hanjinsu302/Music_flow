@@ -1,0 +1,21 @@
+.Categorymusic{
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    .cate{
+        width: 10%;
+        font-size: 3vw;
+       margin-top: 20px;
+       margin-left: 20px;
+    }
+
+    .category{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: max-content;
+        overflow: auto;
+    }
+}
