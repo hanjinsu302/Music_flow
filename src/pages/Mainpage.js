@@ -5,11 +5,13 @@ import Mainsinger from "./Mainsinger";
 import Musicplay from "./Musicplay";
 
 
-const Mainpage = ({}) => {
+const Mainpage = (props) => {
+    const{musics} = props;
+    console.log(musics);
     
     return (
         <div >
-            <Mainmusic/>
+            <Mainmusic musics={musics}/>
             {/* <Mainchart/> */}
             <Mainsinger />
             {/* <Musicplay /> */}

@@ -12,7 +12,9 @@ const Musiccategoryitem = (props) => {
               src={process.env.PUBLIC_URL + `${music.image}`}
               alt="Second slide"/>
               <div className="a">
+              <Link to={"/Musicplay/" + music.title} style={{color:"white"}}>
                 <div className="b">→</div>
+                </Link>
                 <p>{music.title}</p>
                 <p>{music.name}</p>
                 <p>{music.album}</p>

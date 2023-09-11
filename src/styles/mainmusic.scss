@@ -1,43 +1,57 @@
-@import "~include-media/dist/include-media";
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .Mainmusic{
-    background-color: rgb(215, 215, 215);
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 35vw;
+  display: flex;
+  align-items: center;
+  .m{
+    margin-left: 18vw;
+    width: 65%;
+    height: 28vw;
+    background-color: 	#8B5927	;
+    border-radius: 10px;
+  }
+  .m1{
+    margin-left: 18vw;
+    width: 65%;
+    height: 28vw;
+    background-color: 	#3CA03C;
+    border-radius: 10px;
+  }
+  .m2{
+    margin-left: 18vw;
+    width: 65%;
+    height: 28vw;
+    background-color: 	#2828CD;
+    border-radius: 10px;
+  }
+  .p{
+    font-family: 'SBAggroB';
+    width: 20vw;
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    margin: 3vw;
+    text-align: left;
+  }
+  .K{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    .Maintalk{
-        color: black;
-        font-size: 200px;
-        position: relative;
-        overflow: hidden;
-        animation: fadein 11s ease-in-out;
-    }
-    @keyframes fadein {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        100% {
-          opacity: 1;
-          transform: none;
-        }
-      }
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .img, .img1{
+    width: 13%;
+    position: absolute;
+    top: 13vw;
+    left: 22vw;
+  }
 
-      .Startbtn{
-        background-color: rgb(215, 215, 215);
-        color: black;
-        border-color: black;
-        border-radius: 30px;
-        font-style:bold;
-        font-size: 2vw;
-        width: 20vw;
-        height: 4vw;
-        &:hover,
-      &:focus {
-        background-color: black;
-        color: white
-      }
-      }
 }

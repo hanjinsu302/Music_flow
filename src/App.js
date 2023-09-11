@@ -13,6 +13,7 @@ import musics from "./json/musics.json"
 import Musicplay from "./pages/Musicplay";
 import Singer from "./pages/Singer";
 import Categorymusic from "./pages/Categorymusic";
+import MainMusic from "./pages/Mainmusic";
 
 function App() {
  
@@ -22,7 +23,7 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Routes>
-      <Route path="/" element={<Mainpage />} />
+      <Route path="/" element={<Mainpage musics={musics}/>} />
       <Route path="/Mainchart" element={<Mainchart musics={musics} />} />
       <Route path="/Musicplay/:musictitle" element={<Musicplay musics={musics}/>} />
       <Route path="/Singer/:singername" element={<Singer musics={musics}/>}/>

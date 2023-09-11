@@ -3,6 +3,7 @@ import "../styles/musicitem.scss"
 //여기다 노래 정보 받아오는 페이지
 const MusicItem = (props) => {
     const{ music } = props;
+    console.log(music)
     return (
         
         <div className="musicitem">

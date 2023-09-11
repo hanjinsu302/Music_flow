@@ -5,13 +5,12 @@
     .todaymusic {
         display: flex;
         justify-content: flex-start;
-        background-color: rgb(215, 215, 215);
         padding: 10px;
-        font-size: 50px;
+        font-size: 3vw;
         color: black;
     }
 
-        .Mainsinger{
+   .Mainsinger{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -21,16 +20,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(215, 215, 215);
     width: 50%;
-    height: 60vh;
-    padding: 20px;
+    padding: 2vw;
 
 }
 .singerimg{
     position: relative;
-    width: 300px;
-    height:  300px;
+    width: 20vw;
+    height:  20vw;
     z-index: 2;
     .singerCover{
         width: 100%;
@@ -45,8 +42,8 @@
     // background-color: black;
     background: linear-gradient(#000000, #2a2b2b);
     right: 8vw;
-    width: 290px;
-    height: 290px;
+    width: 19vw;
+    height: 19vw;
     border-radius: 50%;
     z-index: 1;
     -webkit-animation:spin 4s linear infinite;
