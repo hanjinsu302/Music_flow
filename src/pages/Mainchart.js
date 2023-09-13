@@ -3,8 +3,8 @@ import MusicItem from "../components/MusicItem";
 
 const Mainchart = (props) => {
     const {musics} =props;
-    const topen = musics.filter((e) => e.country === "해외");
-    const topko = musics.filter((e) => e.country === "국내");
+    const topen = musics.filter((e) => e.country === "해외").slice(0, 5);
+    const topko = musics.filter((e) => e.country === "국내").slice(0, 5);
    console.log(musics);
     return(
         <div>

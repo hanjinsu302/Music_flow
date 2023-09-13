@@ -1,0 +1,27 @@
+.weaderMusic{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    
+    .appContentWrap{
+        width: 100%;
+       
+        display: flex;
+        justify-content: start;
+       
+    }
+    .sky{
+        width: 100%;
+        height: 20%;
+        font-size: 2vw;
+        margin: 1vw;
+
+    }
+    .weader-grid{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

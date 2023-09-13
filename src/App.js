@@ -1,7 +1,13 @@
 import { BrowserRouter, Route, Routes,} from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
+
 //페이지 import
+import Musicplay from "./pages/Musicplay";
+import Singer from "./pages/Singer";
+import Categorymusic from "./pages/Categorymusic";
+import MainMusic from "./pages/Mainmusic";
+import Cookie from "./pages/Cookie";
 import Mainpage from "./pages/Mainpage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,18 +16,40 @@ import Mainchart from "./pages/Mainchart";
 import "./styles/App.css"
 //데이터
 import musics from "./json/musics.json"
-import Musicplay from "./pages/Musicplay";
-import Singer from "./pages/Singer";
-import Categorymusic from "./pages/Categorymusic";
-import MainMusic from "./pages/Mainmusic";
+import Weather from "./pages/Weather";
+
 
 function App() {
+  const [backgroundColor, setBackgroundColor] = useState('white');
+  const [Color, setColor] = useState('black');
+  const [mode, setMode] = useState('다크 모드');
+
+  
+  
+  
+  
+
+  
+
+  // 다크모드/ 라이트모드 변경 함수
+  const toggleMode = () => {
+    if (mode === '다크 모드') {
+      setBackgroundColor('#282c34');
+      setColor('white');
+      setMode('라이트 모드');
+    } else {
+      setBackgroundColor('white');
+      setColor('black');
+      setMode('다크 모드');
+    }
+  };
  
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor, color: Color }}>
       <BrowserRouter>
-      <Header/>
+      <Header toggleMode={toggleMode} mode={mode}/>
+      <Cookie />
       <Routes>
       <Route path="/" element={<Mainpage musics={musics}/>} />
       <Route path="/Mainchart" element={<Mainchart musics={musics} />} />
@@ -31,6 +59,7 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
+      
     </div>
   );
 }

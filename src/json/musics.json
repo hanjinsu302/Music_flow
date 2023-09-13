@@ -7,7 +7,7 @@
         "category":"댄스",
         "country":"국내",
         "album":"MY WORLD - The 3rd Mini Album",
-        "audio":"/audio/aespa - Spicy [128 kbps].mp3"
+        "audio":"/audio/aespa - Spicy [128 kbps].mp3" 
     },
     {
         "id":"2",
@@ -27,7 +27,8 @@
         "album":"앨범",
         "country":"해외",
         "category":"POP",
-        "audio":"/audio/.mp3"
+        "audio":"/audio/.mp3",
+        "weather":"맑은"
     },
     {
         "id":"4",
@@ -68,6 +69,83 @@
         "country":"해외",
         "category":"POP",
         "audio":"/audio/Charlie Puth - I Don’t Think That I Like Her [128 kbps].mp3"
+    },
+    {
+        "id":"8",
+        "title":"ETA",
+        "name":"NewJeans",
+        "image":"/images/NewJeansCover.jpeg",
+        "album":"CHARLIE",
+        "country":"국내",
+        "category":"POP",
+        "audio":"/audio/NewJeans - ETA [320 kbps].mp3"
     }
-    
+    ,
+    {
+        "id":"9",
+        "title":"New Jeans",
+        "name":"New Jeans",
+        "image":"/images/NewJeansCover.jpeg",
+        "album":"NewJeans 2nd EP 'Get Up'",
+        "country":"국내",
+        "category":"POP",
+        "audio":"/audio/NewJeans - New Jeans [320 kbps].mp3"
+    }
+    ,
+    {
+        "id":"10",
+        "title":"Super Shy",
+        "name":"New Jeans",
+        "image":"/images/NewJeansCover.jpeg",
+        "album":"NewJeans 2nd EP 'Get Up'",
+        "country":"국내",
+        "category":"POP",
+        "audio":"/audio/NewJeans - Super Shy [320 kbps].mp3"
+    }
+    ,{
+        "id":"11",
+        "title":"헤어지자말해요",
+        "name":"박재정",
+        "image":"/images/packjeajung.jpeg",
+        "album":"1집 Alone",
+        "country":"국내",
+        "category":"발라드",
+        "audio":"/audio/Parc_Jae_Jung.mp3",
+        "style":"Concentration"
+    }
+    ,{
+        "id":"12",
+        "title":"심(心)",
+        "name":"DK(디셈버)",
+        "image":"/images/Dksim.jpeg",
+        "album":"심(心)",
+        "country":"국내",
+        "category":"발라드",
+        "audio":"/audio/DK_sim.mp3",
+        "style":"Concentration"
+    }
+    ,{
+        "id":"13",
+        "title":"비가 오는 날엔",
+        "name":"Beast",
+        "image":"/images/beast.jpeg",
+        "album":"심(心)",
+        "country":"국내",
+        "category":"발라드",
+        "audio":"/audio/Beast_On_Rainy_Days.mp3",
+        "style":"Concentration",
+        "weather":"비가 오는"
+    }
+    ,{
+        "id":"14",
+        "title":"비도 오고 그래서 (Feat. 신용재)",
+        "name":"헤이즈(Heize)",
+        "image":"/images/Heize.jpeg",
+        "album":"심(心)",
+        "country":"국내",
+        "category":"발라드",
+        "audio":"/audio/Heize_feat.mp3",
+        "style":"Concentration",
+        "weather":"비가 오는"
+    }
 ]

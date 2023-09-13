@@ -1,18 +1,17 @@
 import "../styles/mainmusic.scss";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
-import Mainmusicitem from"../components/Mainmusicitem"
+import MainMusicItem from"../components/Mainmusicitem"
 
 
 
 const MainMusic = (props)=> {
 const {musics} = props;
-console.log(musics)
-const img1 = "/images/free-icon-dumbbell-2307827.png"
 const img = "/images/free-icon-light-bulb-2988036.png"
-const topen = musics.filter((e) => e.country === "해외");
+const img1 = "/images/free-icon-dumbbell-2307827.png"
+const img2 = "/images/free-icon-car-5670281.png"
+const drive = musics.filter((e) => e.country === "국내").slice(0, 8);
+const concentration = musics.filter((e) => e.style === "Concentration").slice(0, 8);
 
 
 
@@ -25,27 +24,34 @@ return (
     <SwiperSlide>
       <div className="m">
         <p className="p">선선한 날씨, 드라이브를 책임질 노래 {musics.image}</p>
-        <div className="K">
-        <div>
-                        {topen.map((music) => {
-                        return <Mainmusicitem key={music.id} music={music} />;
-                        })}
-                    </div>
-
+        <img src={img2} className="img2" />
+        <div className="mainmusicbox">
+        <div className="music-grid">
+            {drive.map((music) => {
+            return<MainMusicItem key={music.id} music={music} />
+            })}
+          </div>
         </div>
       </div>
     </SwiperSlide>
     <SwiperSlide>
       <div className="m1">
         <p className="p">집중이 필요할 때, 집중력을 올려주는 노래</p>
-        <img src={img}  className="img1"/>
+        <img src={img} className="img1" />
+        <div className="mainmusicbox">
+        <div className="music-grid">
+            {concentration.map((music) => {
+            return<MainMusicItem key={music.id} music={music} />
+            })}
+          </div>
+        </div>
 
       </div>
     </SwiperSlide>
     <SwiperSlide>
       <div className="m2">
         <p className="p">오.운.완!, 당신의 운동을 책임질 노래</p>
-        <img src={img1}  className="img1"/>
+        <img src={img1} className="img1" />
       </div>
     </SwiperSlide>
     <SwiperSlide>

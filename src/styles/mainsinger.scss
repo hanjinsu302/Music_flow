@@ -26,8 +26,8 @@
 }
 .singerimg{
     position: relative;
-    width: 20vw;
-    height:  20vw;
+    width: 15vw;
+    height:  15vw;
     z-index: 2;
     .singerCover{
         width: 100%;
@@ -41,9 +41,9 @@
     position: relative;
     // background-color: black;
     background: linear-gradient(#000000, #2a2b2b);
-    right: 8vw;
-    width: 19vw;
-    height: 19vw;
+    right: 7vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 50%;
     z-index: 1;
     -webkit-animation:spin 4s linear infinite;

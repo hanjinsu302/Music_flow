@@ -94,7 +94,7 @@ const Musicplay = (props) => {
             <div className="Playbox">
                     <div className="s">{targetMusic.title}</div>
                     <Link to={"/Singer/" + targetMusic.name}>
-                    <div className="a">{targetMusic.name}＞</div>
+                    <div className="linkname">{targetMusic.name}＞</div>
                     </Link>
                     
                 <div className="img">

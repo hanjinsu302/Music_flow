@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+.mainmusicitem{
+    width: 16vw;
+    height: 5vw;
+  
+
+    display: flex;
+    align-items: center;
+    
+}
+.mainmusicitemcover{
+    width: 3.5vw;
+    margin: 1vw;
+}
+.mainmusicitemcoverimg{
+    width: 100%;
+    border-radius: 5px;
+}
+.mainmusicinfo{
+    width: 70%;
+    text-align: left;
+   
+   
+}
+.info1, .info2{
+    font-size: 1vw;
+    overflow: hidden;  		// 을 사용해 영역을 감출 것
+    text-overflow: ellipsis;  	// 로 ... 을 만들기 
+    white-space: nowrap; 	
+   
+}
