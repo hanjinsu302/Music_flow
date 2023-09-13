@@ -2,12 +2,14 @@ import "../styles/weadermusic.scss"
 import WeatherMusicItem from "../components/Weathermusicitem";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+// import dotenv from"dotenv";
+// dotenv.config();
 
 function Weather(props) {
     const { musics } = props;
     const [result, setResult] = useState({});
     const [rain, setRain] = useState([]); // rain에 해당하는 음악을 저장할 상태
-    const API_KEY = "87434942949ef6063402a72d5ebc5515";
+    const API_KEY =  process.env.REACT_APP_GOOGLE_MAP_API_KEY;
 
     const weatherMappings = {
         Clear: '맑은',
